@@ -1,44 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        crossorigin="anonymous">
-    <title>GoT</title>
-    <style>
-        p {
-            font-family: 'Roboto', sans-serif;
-            margin: 15px;
-        }
-        h1 {
-            font-family: 'Roboto', sans-serif;
-            margin: 15px;
-            font-weight: 800;
-            color: red;
-            text-align: center;
-            text-transform: uppercase;
-            border: dashed 1px green
-        }
-        h3 {
-            font-family: 'Roboto', sans-serif;
-            margin: 15px;
-            font-weight: 800;
-        }
-
-        h6 {
-            font-family: 'Roboto', sans-serif;
-            margin: 15px;
-        }
-
-        html {
-            background-image: url(Képforrás/13.jpg);
-        }
-
-        </style>
+    crossorigin="anonymous">
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="GoT.html">Game of Thrones</a>
@@ -74,43 +42,18 @@
                     <a class="nav-link" href="Content.html">Videó</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
-
-    <h1>
-        Minden ami Trónok Harca
-    </h1>
-    <h6>
-        Spoiler-t tartalmazhat, ha nem láttad a sorozatot vagy a könyveket nem olvastad akkor érhet váratlan információ!
-    </h6>
-    <h6>
-        Megtalálható minden féle-fajta mém.
-    </h6>
-    <p>
-        Egy kis időbe belefog telni mire kész lesz az oldal ezért türelmet kérnék
-    </p>
-    <p>
-        Ez csak egy idéglenes oldal, <i>de már rajta vagyok az <b>ügyön</b> </i> </p>
-    <a target="blank"
-        href="https://www.sorozatbarat.online/video/series/350/Tronok_harca_online_sorozat/01_evad">sorozatbarat</a>
-    <p>
-        A fenti linken megtaláljátok a teljes sorozatot.
-    </p>
-    <h3>Kategoriák</h3>
-    <ul>
-        <li>Mémek</li>
-        <li>Teóriák/sorozat</li>
-        <li>Teóriák/könyv</li>
-        <li>Történetek</li>
-        <li>Galéria</li>
-        <li>Videók</li>
-    </ul>
-
-
+    <fieldset>
+        <legend>Személyes adatok</legend>
+        <div>
+            <label for="name">Név:*</label>
+            <input id="name" name="email" type="email" required>
+        </div>
+        <div>
+            <label for="email">Email cím:*</label>
+            <input id="email" name="email" type="text" required>
+        </div>
+    </fieldset>
 </body>
-
 </html>
