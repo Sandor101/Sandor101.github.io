@@ -8,25 +8,26 @@
         crossorigin="anonymous">
     <title>GoT</title>
     <style>
-        p {
-            font-family: 'Roboto', sans-serif;
-            margin: 15px;
-        }
-        h1 {
-            font-family: 'Roboto', sans-serif;
-            margin: 15px;
-            font-weight: 800;
-            color: red;
-            text-align: center;
-            text-transform: uppercase;
-            border: dashed 1px green
-        }
-        h3 {
-            font-family: 'Roboto', sans-serif;
-            margin: 15px;
-            font-weight: 800;
-        }
-        </style>
+         p {
+          font-family: 'Roboto', sans-serif;
+          margin: 15px;
+      }
+      h1 {
+          font-family: 'Roboto', sans-serif;
+          margin: 15px;
+          font-weight: 800;
+          color: red;
+          text-align: center;
+          text-transform: uppercase;
+          border: dashed 1px green
+      }
+      h3 {
+          font-family: 'Roboto', sans-serif;
+          margin: 15px;
+          font-weight: 800;
+      }
+      
+    </style>
 </head>
 
 <body>
@@ -86,6 +87,58 @@
         </div>
     </nav>
 
+    <p class = "text-center">Kattintson a gombra az oldal teljes képernyős módban történő megnyitásához.</p>
+    <button id = "TeljesKépernyőOn" onclick="openFullscreen();">Teljes képernyő</button>
+    <button id = "TeljesKépernyőOff" onclick="closeFullscreen();">Kilépés teljes képernyőből</button>
+    <p class = "text-center" ><strong>Tip:</strong>A teljes képernyõbõl való kilépéshez nyomja meg az "Esc" gombot.</p>
+    
+    <script>
+    /* Get the element you want displayed in fullscreen */ 
+    var elem = document.documentElement;
+    
+    /* Function to open fullscreen mode */
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.mozRequestFullScreen) { /* Firefox */
+        elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE/Edge */
+        elem = window.top.document.body; //To break out of frame in IE
+        elem.msRequestFullscreen();
+      }
+    }
+    
+    /* Function to close fullscreen mode */
+    function closeFullscreen() {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        window.top.document.msExitFullscreen();
+      }
+    }
+    
+    // Events
+    var output = document.getElementById("myP");
+    document.addEventListener("fullscreenchange", function() {
+      output.innerHTML = "fullscreenchange event fired!";
+    });
+    document.addEventListener("mozfullscreenchange", function() {
+      output.innerHTML = "mozfullscreenchange event fired!";
+    });
+    document.addEventListener("webkitfullscreenchange", function() {
+      output.innerHTML = "webkitfullscreenchange event fired!";
+    });
+    document.addEventListener("msfullscreenchange", function() {
+      output.innerHTML = "msfullscreenchange event fired!";
+    });
+    </script>
+
     <h1>
         Minden ami Trónok Harca
     </h1>
@@ -118,8 +171,23 @@
         <li>Videók</li>
     </ul>
     
+        <button onclick="getElementById('demo').innerHTML=Date()">Pontos idő</button>
+        
+        <p id="demo"></p>
+    
     <img src="Képforrás\13.jpg" class="rounded mx-auto d-block" alt="...">
     <script src="GoT.css"></script>
+
+    <p>Kattintson bárhová ebben az ablakban a test háttér színének megváltoztatásához.</p>
+
+    <script>
+    window.onclick = myFunction;
+    
+    function myFunction() {
+      document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+    }
+    </script>
+
 </body>
 
 </html>
