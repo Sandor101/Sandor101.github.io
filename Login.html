@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="űrlap/bootstrap-4.5.0-dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -64,21 +63,21 @@
                                     <!--Body-->
                                     <div class="md-form">
                                         <i class="fas fa-user prefix white-text active"></i>
-                                        <input type="text" id="form3" class="white-text form-control">
+                                        <input type="text" name="user-name" id="form3" class="white-text form-control">
                                         <label for="form3" class="active">Your name</label>
                                     </div>
                                     <div class="md-form">
                                         <i class="fas fa-envelope prefix white-text active"></i>
-                                        <input type="email" id="form2" class="white-text form-control">
+                                        <input type="email" name="user-email" id="form2" class="white-text form-control">
                                         <label for="form2" class="active">Your email</label>
                                     </div>
                                     <div class="md-form">
                                         <i class="fas fa-lock prefix white-text active"></i>
-                                        <input type="password" id="form4" class="white-text form-control">
+                                        <input type="password" name="user-password" id="form4" class="white-text form-control">
                                         <label for="form4">Your password</label>
                                     </div>
                                     <div class="text-center mt-4">
-                                        <button class="btn btn-indigo">Sign up</button>
+                                        <button type="submit" onsubmit="" class="btn btn-success">Sign up</button>
                                         <hr class="hr-light mb-3 mt-4">
                                         <div class="inline-ul text-center">
                                             <a class="p-2 m-2 tw-ic">
@@ -118,7 +117,11 @@
         </div>
     </main>
     <!--Main Layout-->
-      
+
+    <script src="Login.js"></script>
+
+<button id="goauld" class="btn btn-danger" onclick="this.style.display = 'none'">GOA'ULD</button>
+
 </body>
 
 </html>

@@ -3,37 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="űrlap/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="GoT.css">
     <title>GoT</title>
-    <style>
-         p {
-          font-family: 'Roboto', sans-serif;
-          margin: 15px;
-      }
-      h1 {
-          font-family: 'Roboto', sans-serif;
-          margin: 15px;
-          font-weight: 800;
-          color: red;
-          text-align: center;
-          text-transform: uppercase;
-          border: dashed 1px green
-      }
-      h3 {
-          font-family: 'Roboto', sans-serif;
-          margin: 15px;
-          font-weight: 800;
-      }
-      
-    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="GoT.html">Game of Thrones</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -64,97 +43,39 @@
                 <li class="nav-item">
                     <a class="nav-link" href="Teóriák.html">Teóriák</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Video.html">Videó</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <div class="col-1"></div>
         </div>
     </nav>
-
+<div id="divButton">
     <p class = "text-center">Kattintson a gombra az oldal teljes képernyős módban történő megnyitásához.</p>
-    <button id = "TeljesKépernyőOn" onclick="openFullscreen();">Teljes képernyő</button>
-    <button id = "TeljesKépernyőOff" onclick="closeFullscreen();">Kilépés teljes képernyőből</button>
+    <button class="btn btn-light" id = "TeljesKépernyőOn" onclick="openFullscreen();">Teljes képernyő</button>
+    <button class="btn btn-light" id = "TeljesKépernyőOff" onclick="closeFullscreen();">Kilépés teljes képernyőből</button>
     <p class = "text-center" ><strong>Tip:</strong>A teljes képernyõbõl való kilépéshez nyomja meg az "Esc" gombot.</p>
-    
-    <script>
-    /* Get the element you want displayed in fullscreen */ 
-    var elem = document.documentElement;
-    
-    /* Function to open fullscreen mode */
-    function openFullscreen() {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.mozRequestFullScreen) { /* Firefox */
-        elem.mozRequestFullScreen();
-      } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* IE/Edge */
-        elem = window.top.document.body; //To break out of frame in IE
-        elem.msRequestFullscreen();
-      }
-    }
-    
-    /* Function to close fullscreen mode */
-    function closeFullscreen() {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-      } else if (document.msExitFullscreen) {
-        window.top.document.msExitFullscreen();
-      }
-    }
-    
-    // Events
-    var output = document.getElementById("myP");
-    document.addEventListener("fullscreenchange", function() {
-      output.innerHTML = "fullscreenchange event fired!";
-    });
-    document.addEventListener("mozfullscreenchange", function() {
-      output.innerHTML = "mozfullscreenchange event fired!";
-    });
-    document.addEventListener("webkitfullscreenchange", function() {
-      output.innerHTML = "webkitfullscreenchange event fired!";
-    });
-    document.addEventListener("msfullscreenchange", function() {
-      output.innerHTML = "msfullscreenchange event fired!";
-    });
-    </script>
+</div>
 
     <h1>
         Minden ami Trónok Harca
     </h1>
-    <h6>
-        Spoiler-t tartalmazhat, ha nem láttad a sorozatot vagy a könyveket nem olvastad akkor érhet váratlan információ!
-    </h6>
+    <h4>
+      <b>Spoiler</b>-t tartalmazhat, ha nem láttad a sorozatot vagy a könyveket nem olvastad akkor érhet váratlan információ!
+    </h4>
     <p>
         Egy kis időbe belefog telni mire kész lesz az oldal ezért türelmet kérnék
     </p>
     <p>
-        Ez csak egy idéglenes oldal, <i>de már rajta vagyok az <b>ügyön</b> </i> </p>
-    <a target="blank"
-        href="https://www.sorozatbarat.online/video/series/350/Tronok_harca_online_sorozat/01_evad">sorozatbarat</a>
-    <p>
-        A fenti linken megtaláljátok a teljes sorozatot.
-    </p>
+        Ez csak egy idéglenes oldal, <i>de már rajta vagyok az ügyön.</i> </p>
+   <div id="linkk">
+       <a id="sorozatbarat" target="blank"
+       href="https://www.sorozatbarat.online/video/series/350/Tronok_harca_online_sorozat/01_evad">sorozatbarat</a>
+       <p>
+           A fenti linken megtaláljátok a teljes sorozatot.
+       </p>
+   </div>
+
     <div class="card" style="width: 18rem;">
         <img src="Képforrás/48.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -171,12 +92,11 @@
         <li>Videók</li>
     </ul>
     
-        <button onclick="getElementById('demo').innerHTML=Date()">Pontos idő</button>
+        <button class="btn btn-dark" onclick="getElementById('demo').innerHTML=Date()">Pontos idő</button>
         
         <p id="demo"></p>
     
     <img src="Képforrás\13.jpg" class="rounded mx-auto d-block" alt="...">
-    <script src="GoT.css"></script>
 
     <p>Kattintson bárhová ebben az ablakban a test háttér színének megváltoztatásához.</p>
 
@@ -187,6 +107,7 @@
       document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
     }
     </script>
+<script src="GoT.js"></script>
 
 </body>
 

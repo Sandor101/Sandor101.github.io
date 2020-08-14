@@ -1,72 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    crossorigin="anonymous">
-    <title>Történetek-sorozat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="űrlap/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+  <title>Történetek-sorozat</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="GoT.html">Game of Thrones</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="GoT.html">Game of Thrones</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="GoT.html">                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                      </svg> <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Galéria.html">Galéria</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Login.html">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Video.html">Videó</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Mémek.html">Mémek</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Történetek-könyv.html">Történetek-könyv</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Teóriák.html">Teóriák</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="GoT.html"> <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house"
+              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+              <path fill-rule="evenodd"
+                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+            </svg> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Galéria.html">Galéria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Video.html">Videó</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Mémek.html">Mémek</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Történetek-könyv.html">Történetek-könyv</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Teóriák.html">Teóriák</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
 
-    <p>Kattintson bárhová ebben az ablakban a test háttér színének megváltoztatásához.</p>
+  <p>Kattintson bárhová ebben az ablakban a test háttér színének megváltoztatásához.</p>
 
-    <script>
+  <script>
     window.onclick = myFunction;
-    
+
     function myFunction() {
       document.getElementsByTagName("BODY")[0].style.backgroundColor = "orange";
     }
-    </script>
+  </script>
 
-<div class="card" style="width: 18rem;">
+  <div class="card" style="width: 18rem;">
     <img src="Képforrás/135.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Stark-ház</h5>
-      <p class="card-text">A Stark-ház az egyik legrégebbi múltra visszatekintő család. A hagyomány szerint a Starkok a Hősök Korában élt Építő Brandontól származnak, aki felépítette Deres várát, valamint a hatalmas Falat is. A Starkok azóta uralják Északot. Eleinte a Tél Királyai voltak több ezer évig, egészen addig, amíg Torrhen Stark, belátva reménytelen helyzetét, csata nélkül térdet hajtott Hódító Aegon előtt, kiérdemelve a Térdeplő Király melléknevet. Ezzel a mozzanattal zárult le a Hódítás, azóta a Starkok Észak Védelmezőiként a régió vezető háza maradtak.
-        Bár az Andalok magukkal hoztak egy teljesen új vallást, a Hetek Hitét, az Észak urai megtartották a régi, névtelen isteneiket. Az Észak minden kastélyában épen maradt az istenerdő, az arccal ellátott, fehér varsafájával. A Ház mindig is kapcsolatot ápolt az Éjjeli őrséggel, a Starkok számos tagot és parancsnokot is adtak a fekete testvéreknek.
-        II. Aerys őrülete azonban a Starkokat is romlásba döntötte. Mikor a trónörökös Rhaegar Targaryen elrabolta Lord Rickard Stark lányát, Lyannát, Brandon Stark, a ház örököse Királyvárba vágtatott négy nemesifjú kíséretében, és Rhaegar herceg halálát követelte, mire II. Aerys mindannyiukat lefogatta, árulással vádolta őket, és az udvarba idézte atyjukat, hogy feleljenek a vádakra. Mikor azok eljöttek, tárgyalás nélkül megölette őket, Lord Rickard kivételével, aki párbaj általi ítéletet követelt, abban a hitben, hogy a Testőrség egyik tagjával kell majd megküzdenie. Az Orült Király közölte, hogy a Targaryen-ház bajnoka a tűz, és elevenen megsütötte Lord Starkot a páncéljában, örököse pedig megfulladt, miközben a kardját próbálta elérni, hogy az apjának segítsen. Rickard kisebbik fia, Eddard, az egyik vezető volt az Aerys ellen induló lázadásban.
-        Robert lázadása után a Starkok a Nagy Házak közül a kisebbek közé számítanak, de hűbéruraik még mindig hűségesek hozzájuk, ezért vezető szerepüket Északon senki sem kérdőjelezi meg.
-        Mintegy ezer évvel ezelőtt, a Karlon Stark, Lord Stark másodszülött fia kitüntette magát a lázadó Boltonok ellen, és atyja saját birtokot ajándékozott neki, így született meg a Starkok “ünokaöccseinek” számító Karstark-ház.
+      <p class="card-text">A Stark-ház az egyik legrégebbi múltra visszatekintő család. A hagyomány szerint a Starkok a
+        Hősök Korában élt Építő Brandontól származnak, aki felépítette Deres várát, valamint a hatalmas Falat is. A
+        Starkok azóta uralják Északot. Eleinte a Tél Királyai voltak több ezer évig, egészen addig, amíg Torrhen Stark,
+        belátva reménytelen helyzetét, csata nélkül térdet hajtott Hódító Aegon előtt, kiérdemelve a Térdeplő Király
+        melléknevet. Ezzel a mozzanattal zárult le a Hódítás, azóta a Starkok Észak Védelmezőiként a régió vezető háza
+        maradtak.
+        Bár az Andalok magukkal hoztak egy teljesen új vallást, a Hetek Hitét, az Észak urai megtartották a régi,
+        névtelen isteneiket. Az Észak minden kastélyában épen maradt az istenerdő, az arccal ellátott, fehér
+        varsafájával. A Ház mindig is kapcsolatot ápolt az Éjjeli őrséggel, a Starkok számos tagot és parancsnokot is
+        adtak a fekete testvéreknek.
+        II. Aerys őrülete azonban a Starkokat is romlásba döntötte. Mikor a trónörökös Rhaegar Targaryen elrabolta Lord
+        Rickard Stark lányát, Lyannát, Brandon Stark, a ház örököse Királyvárba vágtatott négy nemesifjú kíséretében, és
+        Rhaegar herceg halálát követelte, mire II. Aerys mindannyiukat lefogatta, árulással vádolta őket, és az udvarba
+        idézte atyjukat, hogy feleljenek a vádakra. Mikor azok eljöttek, tárgyalás nélkül megölette őket, Lord Rickard
+        kivételével, aki párbaj általi ítéletet követelt, abban a hitben, hogy a Testőrség egyik tagjával kell majd
+        megküzdenie. Az Orült Király közölte, hogy a Targaryen-ház bajnoka a tűz, és elevenen megsütötte Lord Starkot a
+        páncéljában, örököse pedig megfulladt, miközben a kardját próbálta elérni, hogy az apjának segítsen. Rickard
+        kisebbik fia, Eddard, az egyik vezető volt az Aerys ellen induló lázadásban.
+        Robert lázadása után a Starkok a Nagy Házak közül a kisebbek közé számítanak, de hűbéruraik még mindig hűségesek
+        hozzájuk, ezért vezető szerepüket Északon senki sem kérdőjelezi meg.
+        Mintegy ezer évvel ezelőtt, a Karlon Stark, Lord Stark másodszülött fia kitüntette magát a lázadó Boltonok
+        ellen, és atyja saját birtokot ajándékozott neki, így született meg a Starkok “ünokaöccseinek” számító
+        Karstark-ház.
         A Ház becses öröksége az ősidőkből származó, atyáról-fiúra szálló, valyriai acélból készült kétkezes kard,
         Jég. Eddard 'Ned' Stark, Deres ura.
-        Felesége, Catelyn Stark (Tully). Gyermekeik: Robb Stark, Sansa Stark, Brandon Stark, Arya Stark,  Rickon Stark, Házasságon kívül: Havas Jon Eddard testvérei: Brandon Stark (az őrült király kivégeztette) Lyana Stark (ismeretlen okból elhúnyt) Benjen Stark (Falon szolgált, eltűnt). </p>
+        Felesége, Catelyn Stark (Tully). Gyermekeik: Robb Stark, Sansa Stark, Brandon Stark, Arya Stark, Rickon Stark,
+        Házasságon kívül: Havas Jon Eddard testvérei: Brandon Stark (az őrült király kivégeztette) Lyana Stark
+        (ismeretlen okból elhúnyt) Benjen Stark (Falon szolgált, eltűnt). </p>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">Jelmondatuk: Közeleg a tél.</li>
@@ -77,6 +105,39 @@
     </ul>
   </div>
 
+  <div id="card2" class="card" style="width: 18rem;">
+    <img src="Képforrás/136.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Targaryen-ház</h5>
+      <p class="card-text">A Targaryen-ház egy valyriai eredetű nemesi család, Valyria Szabad Tartományából (Valyrian
+        Freehold) települtek át Sárkánykő (Dragonstone) szigetére még a Valyriát elpusztító Végzet (Doom) és az azt
+        követő gyilkolás és káosz előtt. A Westeros keleti partja mentén elhelyezkedő Sárkánykő szigete akkoriban a
+        keleti kontinensen elnyúló Valyria legnyugatibb pontja volt. Évszázadokon keresztül e szigeten élt a Targaryen
+        család, idővel elhagyva a valyriai isteneket, s átvéve az andalok által gyakorolt Hét hitét.
+
+        Évtizedekkel később Aegon Targaryen (a későbbi I. Aegon, a Sárkánykirály) a két lánytestvérével, három
+        sárkánnyal és egy kisebb sereggel együtt elindult meghódítani Westeros kontinensét. A Hét Királyság hat hónapon
+        belül elesett.
+
+        Azért, hogy "tisztán" tartsák a királyi vérüket, a Targaryen ház férfi tagjai gyakran vették feleségül a
+        testvéreiket. I. Aegon mindkét nővérét feleségül vette, s mindkettő gyerekeket szült neki. Valószínűleg a
+        vérfertőző szokásaik miatt a Targaryen ház tagai hajlamosak voltak az őrületre. II. Jaehaerys király azt mondta,
+        hogy az őrület és a nagyság egyazon érme két oldala, s valahányszor egy Targaryen születik, az istenek feldobják
+        ezt az érmét, a világ pedig visszatartott lélegzettel figyeli, melyik oldalára esik.
+
+        A Targaryen család ismertetőjegyének az indigó, orgona- vagy ibolyaszínű szem és az ezüstös-arany vagy pedig
+        platinafehér hajszín számított. Egyesek szerint minden egyes Targaryen emberfeletti szépséggel rendelkezett.
+
+        Westeroson az éveket Aegon partraszállásától mérik. </p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Jelmondatuk: Tűz és vér</li>
+      <li class="list-group-item">Székhely: Sárkánykő</li>
+      <li class="list-group-item">Címer: Háromfejű sárkány</li>
+      <li class="list-group-item">Hit: A Hét Istenek</li>
+    </ul>
+  </div>
 
 </body>
+
 </html>
