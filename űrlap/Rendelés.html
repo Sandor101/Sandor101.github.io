@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      crossorigin="anonymous">
+    <title>Rendelés</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="alert alert-primary" role="alert">
+                    Kérem olvassa el a feltételeket!
+                  </div>
+                  <div class="alert alert-secondary" role="alert">
+                    Az oldal sütiket használ!
+                  </div>
+                  <div class="alert alert-success" role="alert">
+                    Sikeres regisztráció!
+                  </div>
+                  <div class="alert alert-danger" role="alert">
+                    A rendszer meghibásodott!
+                  </div>
+                  <div class="alert alert-warning" role="alert">
+                    Lehet, hogy nem minden adat elérhető!
+                  </div>
+                  <div class="alert alert-info" role="alert">
+                    Minden rendben!
+                  </div>
+                  <div class="alert alert-light" role="alert">
+                    A rendszer megfelelően működik!
+                  </div>
+                  <div class="alert alert-dark" role="alert">
+                    The Night King
+                  </div>
+            </div>
+        </div>
+<form class="from-horizontal">
+    <fieldset>
+        <legend>Személyes adatok</legend>
+        <div>
+            <label for="name">Név:*</label>
+            <input id="name" name="email" type="email" required>
+        </div>
+        <div>
+            <label for="address">Cím:*</label>
+            <input id="address" name="address" type="text" required>
+        </div>
+        <div>
+            <label for="email">Email cím:*</label>
+            <input id="email" name="email" type="text" required>
+        </div>
+        <div>
+            <label for="comment">Megjegyzés:</label>
+           <textarea name="comment" id="comment" rows="5"></textarea>
+        </div>
+    </fieldset>
+</div>
+<fieldset>
+    <legend>Termék adatai</legend>
+    <span>Extra feltétek:</span>
+    <div>
+        <input checked id="nothing" name="extra" type="radio" value="0">
+        <label for="nothing">Nem kérek</label>
+        </div>
+        <div>
+            <input  id="cheese" name="extra" type="radio" value="300">
+            <label for="cheese">feltét 1</label>
+        </div>
+        <div>
+            <input  id="duble-cheese" name="extra" type="radio" value="600">
+            <label for="duble-cheese">feltét 2</label>
+        </div>
+        <div>
+            <input  id="duble-meat" name="extra" type="radio" value="1000">
+            <label for="duble-meat">feltét 3</label>
+        </div>
+        <div>
+            <input  id="duble-duble" name="extra" type="radio" value="0">
+            <label for="duble-duble">feltét 4</label>
+        </div>
+        <div>
+            <label for="quantily">Mennyiség:</label>
+            <input id="quantily" name="quantily" type="number" min="1" max="9">
+        </div>
+        <div>
+            <input type="button" value="Rendelés leadása"> Ár: <span>1200</span>Ft
+        </div>
+</fieldset>
+</form>
+    
+</body>
+</html>
