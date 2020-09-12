@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="űrlap/bootstrap-4.5.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Teória</title>
+    <title>Házak</title>
+    <link rel="stylesheet" href="teóriák-házak.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,12 +38,22 @@
                 <li class="nav-item">
                     <a class="nav-link" href="Történetek-könyv.html">Történetek-könyv</a>
                 </li>
-
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <!-- keresés-->
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Házak</button>
+              <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a href="#about">Stark</a>
+                <a href="#base">Targaryen</a>
+                <a href="#blog">Lannister</a>
+                <a href="#contact">Arryn</a>
+                <a href="#custom">Baratheon</a>
+                <a href="#support">Greyjoy</a>
+                <a href="#tools">Tools</a>
+              </div>
+            </div>
+
         </div>
          <!-- Top Navigation Menu -->
          <div class="topnav">
@@ -55,7 +66,7 @@
               <a href="Történetek-könyv.html">Történetek-könyv</a>
               <a href="Video.html">Videók</a>
           </div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <a href="javascript:void(0);" class="icon" onclick="mFunction()">
               <i class="fa fa-bars"></i>
           </a>
       </div>
@@ -64,6 +75,8 @@
       <!-- End smartphone / tablet look -->
       </div>
     </nav> 
+
+    
 
     <p>Kattintson bárhová ebben az ablakban a test háttér színének megváltoztatásához.</p>
 
@@ -74,17 +87,261 @@
       document.getElementsByTagName("BODY")[0].style.backgroundColor = "orange";
     }
     </script>
-    
-<script>
-    function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
+
+<div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4">
+      <div id="alma" class="card">
+        <img height="370" src="Képforrás/135.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Stark-ház</h5>
+          <p class="card-text">A Stark-ház az egyik legrégebbi múltra visszatekintő család. A hagyomány szerint a
+            Starkok a
+            Hősök Korában élt Építő Brandontól származnak, aki felépítette Deres várát, valamint a hatalmas Falat is. A
+            Starkok azóta uralják Északot. Eleinte a Tél Királyai voltak több ezer évig, egészen addig, amíg Torrhen
+            Stark,
+            belátva reménytelen helyzetét, csata nélkül térdet hajtott Hódító Aegon előtt, kiérdemelve a Térdeplő Király
+            melléknevet. Ezzel a mozzanattal zárult le a Hódítás, azóta a Starkok Észak Védelmezőiként a régió vezető
+            háza
+            maradtak.
+            Bár az Andalok magukkal hoztak egy teljesen új vallást, a Hetek Hitét, az Észak urai megtartották a régi,
+            névtelen isteneiket. Az Észak minden kastélyában épen maradt az istenerdő, az arccal ellátott, fehér
+            varsafájával. A Ház mindig is kapcsolatot ápolt az Éjjeli őrséggel, a Starkok számos tagot és parancsnokot
+            is
+            adtak a fekete testvéreknek.
+            II. Aerys őrülete azonban a Starkokat is romlásba döntötte. Mikor a trónörökös Rhaegar Targaryen elrabolta
+            Lord
+            Rickard Stark lányát, Lyannát, Brandon Stark, a ház örököse Királyvárba vágtatott négy nemesifjú
+            kíséretében, és
+            Rhaegar herceg halálát követelte, mire II. Aerys mindannyiukat lefogatta, árulással vádolta őket, és az
+            udvarba
+            idézte atyjukat, hogy feleljenek a vádakra. Mikor azok eljöttek, tárgyalás nélkül megölette őket, Lord
+            Rickard
+            kivételével, aki párbaj általi ítéletet követelt, abban a hitben, hogy a Testőrség egyik tagjával kell majd
+            megküzdenie. Az Orült Király közölte, hogy a Targaryen-ház bajnoka a tűz, és elevenen megsütötte Lord
+            Starkot a
+            páncéljában, örököse pedig megfulladt, miközben a kardját próbálta elérni, hogy az apjának segítsen. Rickard
+            kisebbik fia, Eddard, az egyik vezető volt az Aerys ellen induló lázadásban.
+            Robert lázadása után a Starkok a Nagy Házak közül a kisebbek közé számítanak, de hűbéruraik még mindig
+            hűségesek
+            hozzájuk, ezért vezető szerepüket Északon senki sem kérdőjelezi meg.
+            Mintegy ezer évvel ezelőtt, a Karlon Stark, Lord Stark másodszülött fia kitüntette magát a lázadó Boltonok
+            ellen, és atyja saját birtokot ajándékozott neki, így született meg a Starkok “ünokaöccseinek” számító
+            Karstark-ház.
+            A Ház becses öröksége az ősidőkből származó, atyáról-fiúra szálló, valyriai acélból készült kétkezes kard,
+            Jég. Eddard 'Ned' Stark, Deres ura.
+            Felesége, Catelyn Stark (Tully). Gyermekeik: Robb Stark, Sansa Stark, Brandon Stark, Arya Stark, Rickon
+            Stark,
+            Házasságon kívül: Havas Jon Eddard testvérei: Brandon Stark (az őrült király kivégeztette) Lyana Stark
+            (ismeretlen okból elhúnyt) Benjen Stark (Falon szolgált, eltűnt).</p>
+        </div>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li id="körte" class="list-group-item">Jelmondatuk: Közeleg a tél.</li>
+        <li id="körte" class="list-group-item">Egyébb mondás: Észak nem felejt.</li>
+        <li id="körte" class="list-group-item">Székhely: Deres</li>
+        <li id="körte" class="list-group-item">Címer: rémfarkas</li>
+        <li id="körte" class="list-group-item">Hit: Régi Istenek</li>
+      </ul>
+    </div>
+    <div class="col mb-4">
+      <div class="card">
+        <img src="Képforrás/136.jpg" class="card-img-top" alt="...">
+        <div id="alma" class="card-body">
+          <h5 class="card-title">Targaryen-ház</h5>
+          <p class="card-text">A Targaryen-ház egy valyriai eredetű nemesi család, Valyria Szabad Tartományából
+            (Valyrian
+            Freehold) települtek át Sárkánykő (Dragonstone) szigetére még a Valyriát elpusztító Végzet (Doom) és az azt
+            követő gyilkolás és káosz előtt. A Westeros keleti partja mentén elhelyezkedő Sárkánykő szigete akkoriban a
+            keleti kontinensen elnyúló Valyria legnyugatibb pontja volt. Évszázadokon keresztül e szigeten élt a
+            Targaryen
+            család, idővel elhagyva a valyriai isteneket, s átvéve az andalok által gyakorolt Hét hitét.
+
+            Évtizedekkel később Aegon Targaryen (a későbbi I. Aegon, a Sárkánykirály) a két lánytestvérével, három
+            sárkánnyal és egy kisebb sereggel együtt elindult meghódítani Westeros kontinensét. A Hét Királyság hat
+            hónapon
+            belül elesett.
+
+            Azért, hogy "tisztán" tartsák a királyi vérüket, a Targaryen ház férfi tagjai gyakran vették feleségül a
+            testvéreiket. I. Aegon mindkét nővérét feleségül vette, s mindkettő gyerekeket szült neki. Valószínűleg a
+            vérfertőző szokásaik miatt a Targaryen ház tagai hajlamosak voltak az őrületre. II. Jaehaerys király azt
+            mondta,
+            hogy az őrület és a nagyság egyazon érme két oldala, s valahányszor egy Targaryen születik, az istenek
+            feldobják
+            ezt az érmét, a világ pedig visszatartott lélegzettel figyeli, melyik oldalára esik.
+
+            A Targaryen család ismertetőjegyének az indigó, orgona- vagy ibolyaszínű szem és az ezüstös-arany vagy pedig
+            platinafehér hajszín számított. Egyesek szerint minden egyes Targaryen emberfeletti szépséggel rendelkezett.
+
+            Westeroson az éveket Aegon partraszállásától mérik.</p>
+        </div>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li id="körte" class="list-group-item">Jelmondatuk: Tűz és vér</li>
+        <li id="körte" class="list-group-item">Székhely: Sárkánykő</li>
+        <li id="körte" class="list-group-item">Címer: Háromfejű sárkány</li>
+        <li id="körte" class="list-group-item">Hit: A Hét Istenek</li>
+      </ul>
+    </div>
+    <div class="col mb-4">
+      <div id="alma" class="card">
+        <img src="Képforrás/282.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lannister-ház</h5>
+          <p class="card-text">A Lannisterek andal kalandorok leszármazottai, akik beházasodtak a Szikla Királyának
+            házába.
+            A király Hősök Korában élt Okos Lanntől (Lann the Clever) származtatta családját, aki pusztán furfanggal
+            képes
+            volt elérni, hogy a Casterly-ház nekiadja Casterly-hegyet (Casterly Rock). A Lannisterek évezredeken át
+            uralkodtak a Szikla Királyaiként, egészen a Targaryenek hódító hadjáratáig. Casterly-hegy harc nélkül
+            behódolt
+            Aegonnak, aki ezért cserébe meghagyta a Lannistereket pozíciójukban és ők lettek a Nyugat Védelmezői.
+
+            A Lannisterek a leggazdagabbak az összes nagy ház közül, ez igen nagy részben a Casterly-hegy alatt húzódó
+            arany- és ezüstteléreknek köszönhető. Mindezek ellenére Tytos Lannister uralma alatt a ház mélyrepülésbe
+            kezdett. A lord csapnivalóan igazgatta a család ügyeit, és a felesküdött házak is zúgolódtak ellene,
+            parancsait
+            semmibe vették. A Reyne- és a Tarbeck-ház odáig ment az ellenszegülésben, hogy nyíltan fellázadt a
+            Lannisterek
+            ellen. Tytos örököse, az akkor alig 20 éves Tywin átvette a parancsnokságot és megverte a lázadó házak
+            seregeit,
+            majd mindenestül kiirtotta a lázadó házakat. Erről a konfliktusról (főleg a Reyne-ek leveréséről) szól a
+            széles
+            körben ismert dal a Castamere-i esők (Rains of Castamere).
+
+            Tywin Lannister aztán egymaga, évek alatt visszaállította a Lannister ház gazdagságát és megbecsültségét. A
+            Lannister-ház azóta is a leggazdagabb ház az összes közül, és haderejükkel is csak a Tyrellek vetekedhetnek.
+            Tywin képességeit II. Aerys is elismerte, amikor őt választotta Segítőjéül. Később a viszonyuk megromlott,
+            Tywin
+            lemondott a posztról és sértetten visszavonult Casterly-hegyre, ahonnan csak a lázadás végén tért vissza,
+            feldúlta Királyvárat és megölette a királyi család több tagját.</p>
+        </div>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li id="körte" class="list-group-item">Jelmondatuk: Halld üvöltésem</li>
+        <li id="körte" class="list-group-item">Egyébb mondás: Egy Lannister mindig megfizeti az adósságát</li>
+        <li id="körte" class="list-group-item">Székhely: Casterly-hegy</li>
+        <li id="körte" class="list-group-item">Címer: Oroszlán</li>
+        <li id="körte" class="list-group-item">Hit: A Hét Istenek</li>
+      </ul>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col mb-4">
+        <div id="alma" class="card">
+          <img src="Képforrás/284.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arryn-ház</h5>
+            <p class="card-text">Az Arryn-ház tagjai évezredeken keresztül uralkodtak a Völgy és a Hegy királyaiként a
+              Sasfészekből, Aegon érkezése után pedig a király hűbéreseiként, a Völgy Védelmezője címet viselve.
+              Tradicionálisan az Arrynok töltötték be Kelet Őrének tisztségét is.
+
+              Az Arrynok az andal hódításig vezetik vissza vérvonalukat. Körülbelül hatezer évvel Robert trónra kerülése
+              előtt, az andal hódítás alatt Ser Artys Arryn, a Szárnyas Lovag partra szállt az Ujjakon, és harcosai élén
+              legyőzte a hegyekben élő Elsőket, kiűzte őket a Völgyből. A legenda szerint Ser Artys egy hatalmas sólyom
+              hátán felrepült az Óriás Lándzsájának (Giant's Lance) csúcsára, és megölte az Első felett uralkodó
+              Griffkirályt. Az andalok, miután elfoglalták a Völgyet, Ser Artyst a Völgy és a Hegy királyának
+              választották, a királyság pedig az Arryn Völgye nevet kapta.
+
+              Lord Jon Arrynnál nevelkedett gyámként Robert Baratheon és Eddard Stark. A fiúk nem csak barátságot
+              kötöttek
+              egymással, de Lord Jont második atyjukként tisztelték, így mikor II. Aerys az ifjak átadását követelte,
+              Lord
+              Jon megtagadta a király parancsát, és összehívta zászlósurait. Lord Grafton, a királyhoz hűségesen, nem
+              engedelmeskedett urának, és megpróbálta megakadályozni, hogy Jon és Robert eljuthasson Sirályváros
+              kikötőjébe. Azonban elbukott, így Robert visszatérhetett Viharvégbe, Eddard pedig Északra, és mindkét ifjú
+              összehívta saját hűbéresi seregét, megkezdve ezzel a lázadást.
+
+              Lord Jon részt vett a Harangok Csatájában és a tridenti ütközetben is. Robert trónra kerülése után Jont
+              nevezte ki Segítőnek.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li id="körte" class="list-group-item">Jelmondatuk: Hatalmas, mint a becsuület</li>
+            <li id="körte" class="list-group-item">Székhely: Sasfészek</li>
+            <li id="körte" class="list-group-item">Címer: Fehér sólyom és Hold</li>
+            <li id="körte" class="list-group-item">Hit: A Hét Istenek</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div id="alma" class="card">
+          <img src="Képforrás/283.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Baratheon-ház</h5>
+            <p class="card-text">A Baratheon-ház a legfiatalabb Westeros nagy, uralkodó házai közül, mégis úgy tartják,
+              hogy a sárkányok
+              vére csörgedez bennük. A ház alapítójának Orys Baratheon-t tartják, aki Hódító Aegon legádázatt tábornoka
+              és
+              a pletykák szerint egyben a fattyú testvére is volt. Orys megölte Arrogáns Argilac-et, az utolsó
+              Viharkirályt, és elvette annak lányát, birtokát, és címerét. Ígyhát anyai ágon a Baratheonok a
+              Viharkirályok
+              leszármazottai.
+
+              II. Jaehaerys uralkodása alatt, 260 AL környékén Rhaelle Targaryent feleségül vette egy ismeretlen
+              Baratheon-házbeli férfi. A Targaryenek belházasságát figyelembe véve szokatlan egybekelés volt ez, ám nem
+              olyan kirívó, mivel a Baratheon-vérben valamilyen szinten megtalálható a Targaryen-vér
+              is, így a család felmenői "tisztának" tekinthetőek.
+
+              Robert Baratheon vezetésével, a Jon Arryn által kirobbantott felkelés során, sikerült elűzni a
+              Targaryeneket
+              Westerosról, habár ez csak jelentős veszteségek árán sikerült. Robert ezután azon a jogcímen, hogy anyai
+              ágon a Targaryenek leszármazottja, benyújtotta igényét a Vastrónra, és a velük járó birtokokra,
+              Királyvárra
+              (King's Landing) és Sárkánykőre (Dragonstone).
+
+              A Baratheon-ház három részre szakadt. A család fő ága, a királyi Baratheonok, Roberttel az élen,
+              Királyvárban élnek. Királysága megnyerése után I. Robert a testvérét, Stannist nevezte ki Sárkánykő
+              hercegévé, így megfosztva őt a Baratheon-ház eredeti székhelyétől, Viharvégtől (Storm's End), melyet
+              Renly,
+              a legkisebb Baratheon örökölt.</p>
+          </div>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li id="körte" class="list-group-item">Jelmondatuk: Miénk a harag</li>
+          <li id="körte" class="list-group-item">Székhely: Viharvég</li>
+          <li id="körte" class="list-group-item">Címer: Szarvas</li>
+          <li id="körte" class="list-group-item">Hit: A Hét Istenek</li>
+        </ul>
+      </div>
+      <div class="col mb-4">
+        <div id="alma" class="card">
+          <img src="Képforrás/285.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Greyjoy-ház</h5>
+            <p class="card-text">A Greyjoy-ok a Hősök Korában élt Szürke Királytól származtatják magukat.
+
+              A Vas-szigetek rablói - akiket „vasembereknek" neveztek azok, akiket kifosztottak - évezredeken keresztül
+              a tengerek rémei voltak. Eljutottak Ibben kikötőjéig és a Nyár Szigetekig is. Büszkék voltak a csatában
+              tanúsított bátorságukra és szent szabadságukra. Minden szigetnek megvolt a maga „sókirálya" és
+              „sziklakirálya". Közülük választották a szigetek Főkirályát, míg Urron király örökletessé nem tette a
+              trónt azzal, hogy megölette a többi királyt, amikor azok a választásra összegyűltek. Urron saját
+              dinasztiája egy évezreddel később pusztult ki, amikor az andalok leigázták a szigeteket. A Greyjoyok, a
+              sziget többi uraihoz hasonlóan összekeveredtek a hódítókkal. A Vaskirályok kiterjesztették uralmukat
+              messze a szigeteken túlra. Tűzzel és karddal királyságokat hoztak létre magán a szárazföldön is. Qhored
+              király joggal dicsekedhetett, hogy az ő törvénye addig tart, „ameddig az emberek érzik a só illatát és
+              hallják a hullámok morajlását". Az elkövetkező évszázadokban Qhoren utódai elvesztették az Arbort,
+              Óvárost, a Medve-szigetet és a nyugati partvidék nagy részét. Amikor azonban eljött a Hódító Háborúk kora,
+              Fekete Harren király uralkodott minden földön a hegyek között, a Nyaktól a Feketevíz Folyóig. Amikor
+              Harren és fiai Harrenhal elestekor elpusztultak, Aegon Targaryen a Tullyknak adta a folyóvidéket és
+              megengedte a Vas-szigetek még életben lévő urainak, hogy felélesszék a régi hagyományt és maguk közül
+              válasszanak vezetőt. Lord Vickon Greyjoyt, Pyke Urát választották.
+
+              Balon Greyjoy hat évvel Robert királlyá koronázása után fellázadt az uralkodó ellen, és a Vas-szigetek
+              királyának nevezte magát. A felkelés kezdetben sikeres volt, a vasemberek megtámadták Lannisportot, és
+              rengeteg hajót elégettek, elpusztítva ezzel a Lannister-flotta jelentős részét, de végül Pyke ostrománál
+              legyőzték őket. A háború során Balon két idősebb fia, Rodrik és Maron, meghalt, a harmadikat, Theont pedig
+              Lord Eddard túszként vitte Deresbe.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li id="körte" class="list-group-item">Jelmondatuk: Mi nem vetünk</li>
+            <li id="körte" class="list-group-item">Egyébb mondás: Ami meghalt, nem halhat meg újra</li>
+            <li id="körte" class="list-group-item">Székhely: Vas szigetek</li>
+            <li id="körte" class="list-group-item">Címer: Kraken</li>
+            <li id="körte" class="list-group-item">Hit: A Vízbefult Isten</li>
+          </ul>
+        </div>
+      </div>
+
+<script src="teóriák-házak.js"></script>
 
 </body>
 </html>

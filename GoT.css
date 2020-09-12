@@ -1,27 +1,20 @@
-/*
-body, html {
-    height: 100%;
-  }
-  .bg {
 
-    background-image: url("https://laava.hu/wp-content/uploads/got.jpg");
-  
-    height: 50%;
-  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  */
+body {
+  background-image: url("Képforrás/13.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
   p {
     font-family: 'Roboto', sans-serif;
     margin: 15px;
+    color: #ffffff;
 }
 h1 {
     font-family: 'Roboto', sans-serif;
     margin: 15px;
     font-weight: 800;
-    color: blue;
+    color: yellow;
     text-align: center;
     text-transform: uppercase;
     border: dashed 1px green
@@ -37,6 +30,7 @@ b {
 }
 h4 {
   font-weight: 300;
+  color: #ffffff;
 }
 
   #TeljesKépernyőOn {
@@ -106,6 +100,19 @@ h4 {
   }
   
   .active {
-    background-color: #4CAF50;
+    background-color: #ffffff;
     color: white;
   }
+
+  #pelem {
+    color: black;
+  }
+
+#homegomb {
+  color: #bd3030;
+  background-color: black;
+}
+
+#oxigen {
+  background-color: black;
+}
