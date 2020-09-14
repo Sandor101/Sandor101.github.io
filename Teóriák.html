@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="teóriák-házak.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="GoT.html">Game of Thrones</a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="GoT.html">                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <a id="homegomb" class="nav-link" href="GoT.html">                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
                         <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
                       </svg> <span class="sr-only">(current)</span></a>
@@ -41,7 +41,7 @@
             </ul>
             <!-- keresés-->
             <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Házak</button>
+              <button id="hazak" onclick="myFunction()" class="dropbtn">Házak</button>
               <div id="myDropdown" class="dropdown-content">
                 <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
                 <a href="#about">Stark</a>
@@ -57,7 +57,7 @@
         </div>
          <!-- Top Navigation Menu -->
          <div class="topnav">
-            <a href="GoT.html" class="active">Home</a>
+            <a id="oxigen" href="GoT.html" class="active">Home</a>
             <div id="myLinks">
                 <a href="Galéria.html">Galéria</a>
               <a href="Login.html">Login</a>
@@ -89,7 +89,7 @@
     </script>
 
 <div class="row row-cols-1 row-cols-md-3">
-    <div class="col mb-4">
+    <div class="col mb-3">
       <div id="alma" class="card">
         <img height="370" src="Képforrás/135.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -143,7 +143,7 @@
         <li id="körte" class="list-group-item">Hit: Régi Istenek</li>
       </ul>
     </div>
-    <div class="col mb-4">
+    <div class="col mb-3">
       <div class="card">
         <img src="Képforrás/136.jpg" class="card-img-top" alt="...">
         <div id="alma" class="card-body">
@@ -182,7 +182,7 @@
         <li id="körte" class="list-group-item">Hit: A Hét Istenek</li>
       </ul>
     </div>
-    <div class="col mb-4">
+    <div class="col mb-3">
       <div id="alma" class="card">
         <img src="Képforrás/282.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -226,7 +226,7 @@
     </div>
 
     <div class="row row-cols-1 row-cols-md-3">
-      <div class="col mb-4">
+      <div class="col mb-3">
         <div id="alma" class="card">
           <img src="Képforrás/284.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -262,7 +262,7 @@
           </ul>
         </div>
       </div>
-      <div class="col mb-4">
+      <div class="col mb-3">
         <div id="alma" class="card">
           <img src="Képforrás/283.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -302,7 +302,7 @@
           <li id="körte" class="list-group-item">Hit: A Hét Istenek</li>
         </ul>
       </div>
-      <div class="col mb-4">
+      <div class="col mb-3">
         <div id="alma" class="card">
           <img src="Képforrás/285.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -342,6 +342,32 @@
       </div>
 
 <script src="teóriák-házak.js"></script>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 :
+    <a href="GoT.html"> Trónok harca az egész világ</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </body>
 </html>

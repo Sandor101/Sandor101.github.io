@@ -46,3 +46,22 @@ body {
     background-color: #ffffff;
     color: white;
   }
+  #homegomb {
+    color: #bd3030;
+    background-color: black;
+  }
+  
+  #oxigen {
+    background-color: black;
+  }
+  
+  #lablec {
+  color: blanchedalmond;
+  }
+  
+  img {
+    width: 20,3%;
+    height: 555px;
+    margin: 1%;
+    box-shadow: 0 0 11px black
+        }

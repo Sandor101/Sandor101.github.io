@@ -118,3 +118,16 @@ h5 {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+#homegomb {
+  color: #bd3030;
+  background-color: black;
+}
+
+#oxigen {
+  background-color: black;
+}
+
+#hazak {
+  background-color: black;
+}

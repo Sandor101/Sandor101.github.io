@@ -46,3 +46,12 @@ body {
     background-color: #ffffff;
     color: white;
   }
+  
+  #homegomb {
+    color: #bd3030;
+    background-color: black;
+  }
+  
+  #oxigen {
+    background-color: black;
+  }
