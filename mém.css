@@ -65,3 +65,78 @@ body {
     margin: 1%;
     box-shadow: 0 0 11px black
         }
+
+        #container {
+          /*container elem definiálása, középre igazítás, margó beállítás*/
+    
+          width: 800px;
+          margin: 50px auto;
+          text-align: center;
+        }
+    
+        header {
+          margin-bottom: 50px;
+          /*oldal tetejétől a behúzás, hogy szebb legyen*/
+        }
+    
+        h1 {
+    
+          font-size: 24px;
+          font-weight: bold;
+          color: #8b66bc;
+          /*h1 szöveg stílusa*/
+        }
+    
+        #images {
+          width: 800px;
+          /*képméretezés*/
+          height: 555px;
+          margin: 25px auto;
+          overflow: hidden;
+          /*képek egymásra pozíciónálása, behúzás*/
+          position: relative;
+        }
+    
+        #images img {
+          width: 800px;
+          /*méretek megadása*/
+          height: 555px;
+          position: absolute;
+          /*újabb pozícionálás az átfedés miatt*/
+          left: -500px;
+          /*balról hozza az új képet, ezért -*/
+          top: 0;
+          z-index: 1;
+          /*áttűnés efektért felel*/
+          opacity: 0;
+          /*átlátszóság*/
+          transition: all linear 600ms;
+          /* maga a slide effekt, a csúszás*/
+          -o-transition: all linear 600ms;
+          -moz-transition: all linear 600ms;
+          -webkit-transition: all linear 600ms;
+        }
+    
+        #images img:target {
+          left: 0;
+          /*kép igazítása, átlátszóság megszüntetése*/
+          z-index: 8;
+          opacity: 1;
+        }
+    
+        #images img:first-child {
+    left: 0; /*hogy legyen alul egy kép konkrétan az 1-es és látható is legyen*/
+    opacity: 1;
+    }
+    
+    #button a {
+    text-decoration: none; /*gombok kialakítása*/
+    border: 1px solid #aaaeb6;
+    padding: 5px 7px;
+    background: #dde2ea;
+    }
+    
+    #button a:hover { /*gomb fölé vitt egér esetén*/
+    background: #97beff;
+    }
+    
